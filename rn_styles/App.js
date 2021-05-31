@@ -13,10 +13,10 @@ import Footer from './src/components/Footer';
 import { darkTheme, lightTheme } from './src/styles/theme';
 
 const App = () => {
-  const colorScheme = useColorScheme();
+  const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <ThemeProvider theme={colorScheme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <SafeAreaWrapper>
         <StatusBar translucent={true} backgroundColor="transparent" />
         <Header style={[styles.header, styles.common]} />
