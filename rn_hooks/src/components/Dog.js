@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { useFetch } from '../hooks/useFetch';
-import Buttons from './Buttons';
 
 const StyledImage = styled.Image`
   background-color: #7f8c8d;
